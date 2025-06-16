@@ -19,6 +19,10 @@ body {
   background-size: auto;
   background-position: top left;
   background-repeat: repeat;
+    
+     padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -621,5 +625,16 @@ footer h1 a:hover {
 
     .main-carousel .carousel-cell img {
         margin: 10px;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
