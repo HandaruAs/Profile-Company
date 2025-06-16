@@ -558,111 +558,192 @@ footer h1 a:hover {
     color: #ffce09;
 }
 
-@media screen and (max-width:768px) {
-    .nav {
-        justify-content: space-between;
-        padding: 0px 30px;
-    }
+@media screen and (max-width: 768px) {
+  .nav {
+    justify-content: space-between;
+    padding: 0px 30px;
+  }
 
-    .nav a {
-        display: none;
-    }
+  .nav a {
+    display: none;
+  }
 
-    #btn-nav {
-        display: block;
-    }
+  #btn-nav {
+    display: block;
+  }
 
-    .box-menu {
-        flex-direction: column;
-        margin: 10px;
-        width: 280px;
-    }
+  .footer {
+    flex-direction: column;
+  }
 
-    .area-menu {
-        width: 260px;
-        height: 220px;
-    }
+  .area-visi .main-carousel {
+    width: 300px;
+  }
 
-    .footer {
-        flex-direction: column;
-    }
+  .area-visi img {
+    width: 300px;
+  }
 
-    .area-visi .main-carousel {
-        width: 300px;
-    }
+  .visi-kiri {
+    width: 300px;
+  }
 
-    .area-visi img {
-        width: 300px;
-    }
+  .box-visi img {
+    width: 60px;
+    height: 60px;
+  }
 
-    .visi-kiri {
-        width: 300px;
-    }
+  .product {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px;
+  }
 
-    .box-visi img {
-        width: 60px;
-        height: 60px;
-    }
+  .box-product {
+    min-width: 90%;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .box-product img {
+    width: 45%;
+    height: auto;
+  }
+
+  .area-product {
+    width: 50%;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .area-product .judul,
+  .area-product p,
+  .harga-box {
+    text-align: left;
+  }
+
+  .area-review {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .box-review {
+    flex: 0 0 80%;
+    min-width: 80%;
+    scroll-snap-align: center;
+    margin: 10px;
+    position: relative;
+  }
+
+  .box-review img {
+    width: 60px;
+    height: 60px;
+    top: -30px;
+    left: calc(50% - 30px);
+  }
+
+  .box-review h1 {
+    font-size: 16px;
+    margin-top: 40px;
+  }
+
+  .box-review p {
+    font-size: 14px;
+  }
+
+  .container,
+  .beranda,
+  .tentang,
+  .area-visi,
+  .product,
+  .area-review,
+  .lokasi,
+  .area-gallery,
+  .footer {
+    width: 100vw;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .area-tentang,
+  .visi-kiri,
+  .box-product,
+  .area-product,
+  .box-review,
+  .area-kontak,
+  .box-visi {
+    width: 95% !important;
+    margin: auto;
+  }
+
+  .box-visi {
+    text-align: center;
+  }
+
+  .area-visi {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .visi-kiri,
+  .area-visi img,
+  .area-visi .main-carousel {
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+
+  .area-gallery {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .area-gallery img {
+    width: 45vw;
+    height: auto;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+  }
 }
 
 @media screen and (max-width:600px) {
-    .nav-menu {
-        width: 100%;
-    }
+  .nav-menu {
+    width: 100%;
+  }
 
-    .beranda span {
-        font-size: 30px;
-    }
+  .beranda span {
+    font-size: 30px;
+  }
 
+  .tentang img {
+    width: 300px;
+    height: 260px;
+  }
 
-    .tentang img {
-        width: 300px;
-        height: 260px;
-    }
+  .area-tentang {
+    width: 300px;
+  }
 
-    .area-tentang {
-        width: 300px;
-    }
+  .main-carousel {
+    width: 95%;
+  }
 
-    .main-carousel {
-        width: 95%;
-    }
-
-    .main-carousel .carousel-cell img {
-        margin: 10px;
-    }
-}
-@media screen and (max-width: 768px) {
-    body {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .box-product {
-        flex-direction: column;
-        margin: 20px 0px;
-    }
-
-    .area-product {
-        width: 100%;
-        margin: 10px 0px;
-        align-items: center;
-        text-align: center;
-    }
-
-    .box-review {
-        width: 90%;
-    }
-
-    .area-gallery img {
-        width: 90%;
-        height: auto;
-        margin: 10px 0;
-    }
+  .main-carousel .carousel-cell img {
+    margin: 10px;
+  }
 }
 
