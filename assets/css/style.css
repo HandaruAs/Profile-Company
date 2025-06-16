@@ -557,193 +557,122 @@ footer h1 a {
 footer h1 a:hover {
     color: #ffce09;
 }
-
-@media screen and (max-width: 768px) {
-  .nav {
-    justify-content: space-between;
-    padding: 0px 30px;
-  }
-
-  .nav a {
-    display: none;
-  }
-
-  #btn-nav {
-    display: block;
-  }
-
-  .footer {
-    flex-direction: column;
-  }
-
-  .area-visi .main-carousel {
-    width: 300px;
-  }
-
-  .area-visi img {
-    width: 300px;
-  }
-
-  .visi-kiri {
-    width: 300px;
-  }
-
-  .box-visi img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .product {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .box-product {
-    min-width: 90%;
-    flex-shrink: 0;
-    scroll-snap-align: center;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .box-product img {
-    width: 45%;
-    height: auto;
-  }
-
-  .area-product {
-    width: 50%;
-    padding: 10px;
-    justify-content: center;
-  }
-
-  .area-product .judul,
-  .area-product p,
-  .harga-box {
-    text-align: left;
-  }
-
-  .area-review {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .box-review {
-    flex: 0 0 80%;
-    min-width: 80%;
-    scroll-snap-align: center;
-    margin: 10px;
-    position: relative;
-  }
-
-  .box-review img {
-    width: 60px;
-    height: 60px;
-    top: -30px;
-    left: calc(50% - 30px);
-  }
-
-  .box-review h1 {
-    font-size: 16px;
-    margin-top: 40px;
-  }
-
-  .box-review p {
-    font-size: 14px;
-  }
-
-  .container,
-  .beranda,
-  .tentang,
-  .area-visi,
-  .product,
-  .area-review,
-  .lokasi,
-  .area-gallery,
-  .footer {
-    width: 100vw;
-    max-width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .area-tentang,
-  .visi-kiri,
-  .box-product,
-  .area-product,
-  .box-review,
-  .area-kontak,
-  .box-visi {
-    width: 95% !important;
-    margin: auto;
-  }
-
-  .box-visi {
+@media (max-width: 768px) {
+  .judul {
+    font-size: 20px;
     text-align: center;
   }
 
-  .area-visi {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding: 20px;
-    gap: 20px;
+  .box-product {
+    margin-bottom: 20px;
   }
 
-  .visi-kiri,
-  .area-visi img,
-  .area-visi .main-carousel {
-    flex-shrink: 0;
-    scroll-snap-align: center;
+  .area-product, .area-review {
+    padding: 10px;
   }
 
+  .footer .footer-1,
+  .footer .footer-2,
+  .footer .footer-3,
+  .footer .footer-4 {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  
   .area-gallery {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 16px;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    justify-items: center;
   }
 
   .area-gallery img {
-    width: 45vw;
+    width: 140%;        
+    max-width: 150px;  
     height: auto;
-    scroll-snap-align: center;
-    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 8px; 
   }
+
+.area-visi {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  align-items: center;
 }
 
-@media screen and (max-width:600px) {
-  .nav-menu {
-    width: 100%;
-  }
+.main-carousel {
+  order: -1; 
+  width: 100%;
+  max-width: 300px;
+}
 
-  .beranda span {
-    font-size: 30px;
-  }
+.main-carousel .carousel-cell {
+  width: 100%;
+  height: auto;
+}
 
-  .tentang img {
-    width: 300px;
-    height: 260px;
-  }
+.main-carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
 
-  .area-tentang {
-    width: 300px;
-  }
+.visi-kiri {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 15px;
+  overflow-x: auto;
+  width: 100%;
+  justify-content: flex-start;
+  scroll-behavior: smooth;
+  padding: 0 10px;
+}
 
-  .main-carousel {
-    width: 95%;
-  }
+.box-visi {
+  flex: 0 0 auto;
+  min-width: 250px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+.area-review {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden; 
+  gap: 15px;
+  scroll-behavior: smooth;
+  padding: 10px;
+  box-sizing: border-box;
+}
 
-  .main-carousel .carousel-cell img {
-    margin: 10px;
-  }
+.area-review::-webkit-scrollbar {
+  height: 6px;
+}
+
+.area-review::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+.box-review {
+  flex: 0 0 auto;
+  min-width: 250px;
+  background-color: #ffffff; 
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
 }
 
