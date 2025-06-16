@@ -632,4 +632,37 @@ footer h1 a:hover {
         margin: 10px;
     }
 }
+@media screen and (max-width: 768px) {
+    body {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .box-product {
+        flex-direction: column;
+        margin: 20px 0px;
+    }
+
+    .area-product {
+        width: 100%;
+        margin: 10px 0px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .box-review {
+        width: 90%;
+    }
+
+    .area-gallery img {
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+    }
+}
 
