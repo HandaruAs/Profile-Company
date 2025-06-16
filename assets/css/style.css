@@ -692,6 +692,9 @@ footer h1 a:hover {
   overflow-x: hidden;
   box-sizing: border-box;
 }
+    .nav {
+  padding-left: 15px;
+}
 
 .nav a {
   flex: 1 1 0;
