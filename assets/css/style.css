@@ -633,9 +633,8 @@ footer h1 a:hover {
   justify-content: flex-start;
   scroll-behavior: smooth;
   padding: 0 10px;
-  margin-top: -10px;
+  margin-top: -25px;
 }
-
 
 .box-visi {
   flex: 0 0 auto;
@@ -685,7 +684,7 @@ footer h1 a:hover {
 }
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   gap: 5px;
   padding: 10px;
@@ -716,18 +715,26 @@ footer h1 a:hover {
 .box-product {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
   padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.05); 
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 10px auto;
+  box-sizing: border-box;
 }
 
 .box-product img {
-  width: 130px;           
-  height: auto;
+  width: 130px; 
+  height: 130px;
+  border-radius: 10px;
   object-fit: cover;
-  border-radius: 6px;
-  margin-top: 10px;       
+  background-color: #fff; 
+  padding: 5px;
 }
+
 
 .area-product .area-product {
   flex: 1;
@@ -771,6 +778,19 @@ footer h1 a:hover {
   font-weight: bold;
   font-size: 16px;            
   margin-top: 6px;
+}
+.lokasi {
+  padding: 0 10px; 
+  box-sizing: border-box;
+}
+
+#map {
+  width: 100%;
+  height: 250px;
+  border: 0;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
 }
 
 }
